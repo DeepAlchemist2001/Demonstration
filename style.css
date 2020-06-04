@@ -1,0 +1,228 @@
+h1 {
+    color: blue;
+    text-align: center;
+    text-shadow: 4px 4px 5px darkred;
+}
+
+.title{
+    color: rgb(228, 153, 13);
+    border: 10px dotted darkorange;
+}
+#italic{
+    color: chocolate;
+}
+.container{
+    border: 5px solid darkmagenta;
+    margin: 50px;
+    padding: 30px;
+}
+.box{
+    background-color: darkorange;
+    height: 200px;
+    width: 200px;
+    margin: 30px 30px;
+    box-shadow: 20px 20px 20px 20px gray;
+}
+
+@keyframes fadeMe{
+    0%{
+        opacity: 1;
+    } 
+    100%{
+        opacity: 0;
+    }
+}
+
+#box1{
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg); 
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
+}
+
+#box2{
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle,purple,orange,red,yellow);
+}
+nav{
+    background-color: green;
+    text-align: center;
+}
+a {
+    text-decoration-line: none;
+}
+nav ul {
+    list-style: none;
+}
+nav li{
+    display:inline-block;
+    padding: 30px;
+}
+.circle-img{
+    border-radius: 50%;
+
+}
+img{
+    box-shadow: 20px 20px 20px 20px gray;
+}
+.flex{
+    margin: 20px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@keyframes getBigger{
+    0%{transform: scale(1);}
+    50%{transform: scale(2);}
+    100%{transform: scale(0.5);}
+}
+
+#box3{
+    
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background-color: chocolate;
+
+}
+
+@keyframes changeColours{
+    0%{background-color: red;}
+    10%{background-color: orange;}
+    20%{background-color: yellow;}
+    40%{background-color: green;}
+    60%{background-color: blue;}
+    80%{background-color: indigo;}
+    100%{background-color: violet;}
+
+}
+#box4{
+    
+    animation: changeColours 3s 2s forwards;
+}
+
+@keyframes moveBox{
+    0%{left: 0px; top: 0px;}
+    25%{left: 100px; top: 0px;}
+    50%{left: 100px; top: 200px;}
+    75%{left: 0px; top: 200px;}
+    100%{left: 0px; top: 0px;}
+}
+
+#box5{
+    position: relative;
+    animation: moveBox 5s 3s;
+    background-color: red;
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+ 
+html{
+    background-color: white;
+}
+
+form input,textarea,button{
+    display: block;
+    margin: 30px;
+}
+
+.nav-wrapper{
+    background-color: green;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    margin: 30px;
+}
+
+.input-field{
+    margin: 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: yellowsssssss;
+    color: #444;
+}
+
+.Box {
+    background-color: yellowgreen;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(violet,indigo,blue,
+    green,yellow,orange,red);
+}
+.d {
+    grid-column: col 1 / span  3 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 4 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+}
+
